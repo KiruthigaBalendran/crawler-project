@@ -9,7 +9,7 @@ import java.io.FileWriter;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        File crawlStorage = new File("C:\\Users\\kiru\\IdeaProjects\\crawler-project\\crawled-data");
+        File crawlStorage = new File("C:\\Users\\kbal3920\\IdeaProjects\\crawler-project\\crawled-data");
         CrawlConfig config = new CrawlConfig();
         config.setCrawlStorageFolder(crawlStorage.getAbsolutePath());
 
@@ -24,7 +24,7 @@ public class App {
 
         CrawlerStatistics stats = new CrawlerStatistics();
 
-        String file_path = "C:\\Users\\kiru\\IdeaProjects\\crawler-project\\crawled-data\\bbc_sports.xml";
+        String file_path = "C:\\Users\\kbal3920\\IdeaProjects\\crawler-project\\crawled-data\\bbc_sports.xml";
         File myObj = new File(file_path);
         if (myObj.createNewFile()) {
             System.out.println("File created: " + myObj.getName());
